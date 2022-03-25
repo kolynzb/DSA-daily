@@ -37,7 +37,7 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
 
-## Constraints::
+## Constraints :
 
 ```
 2 <= nums.length <= 104
@@ -46,6 +46,6 @@ Output: [0,1]
 Only one valid answer exists.
 ```
 
-## Follow-up: `Can you come up with an algorithm that is less than O(n2) time complexity?`
+### Follow-up: `Can you come up with an algorithm that is less than O(n2) time complexity?`
 
 # Solutions
