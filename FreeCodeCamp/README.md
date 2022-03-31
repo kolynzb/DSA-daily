@@ -23,3 +23,17 @@
   When i ask britney she goes is it 5 (_i say too low_), is it 8 (_i say too low_), is it 9 (_i say too low_), its 10 (_Correct_).
 
 - So now we see Britneys strategy is way better because she took less turns.In the worst case senario(_10_) we notice that John is slower and takes 10 turns.if we play the same game with a range of 1 to 100 with 5 as the number.We notice that John takes 5 tries and Britney takes 7.Now if the number is 100 john takes 100 turns and britney takes 7 tries.
+- Assuming this was facebook searching algorithm. How long would it take to find a username using either of the searches.
+  |Approach | Search Algorithm used|
+  |-----|-------|
+  |John| linear Search or sequential Search or simple Search|
+  |Brintney| Binary Search|
+
+### linear Search algorithm
+
+- library example
+ steps
+ 1. Start at beginning
+ 2. Compare current values to target
+ 3. Move sequentially
+ 4. Reach end of list 
