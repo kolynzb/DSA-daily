@@ -1,5 +1,7 @@
 """
 Note that it must be sorted
+O(logn) --> Logarithmic runtime
+iterative method --> prefered by python
 """
 def binary_search(list,target):
     first = 0

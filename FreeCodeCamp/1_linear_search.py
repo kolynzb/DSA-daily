@@ -1,5 +1,6 @@
 """
 Returns index position of target if found else return None
+O(n) --> linear runtime
 """
 def linear_search(list,target):
     for i in range(len(list)):       

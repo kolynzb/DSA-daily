@@ -32,8 +32,37 @@
 ### linear Search algorithm
 
 - library example
- steps
- 1. Start at beginning
- 2. Compare current values to target
- 3. Move sequentially
- 4. Reach end of list 
+  teps
+
+1.  Start at beginning
+2.  Compare current values to target
+3.  Move sequentially
+4.  Reach end of list
+
+# Algoritm Guide lines
+
+# Efficiency
+
+Efficiency is dettermined by space and time.
+
+## Time Complexity
+
+## Space complexity
+
+- the amount of space it takes in memory.Its also measured by the worst case senario.Consider memory usage especially considering the size of the dataset(_n_) grows bigger.
+- In [iterative binary search](./2_binary_search.py) the time complexity is constant space 0(1) because we are reassigning the variables on line 7 and 8. (_With sapce complexity we consider the amount of extra memory need for the algorithm to run_) so the value of the space n doesnot increase heance constant space.
+
+- In [recursive binary search](./2_binary_search.py) In this
+  func would call itself and get the midpoint it then checks whether its greater then the target and then it splits the list (n/2) so for each function call memory is alocated for the next split list (N --> N/2 --> N/4 ) hence logarithmic space (_but this depends on the language this is called TAIL OPTIMIZATION_)
+
+# **Introduction To Data Structures**.
+
+    A data storage format. It is the collection of values and the format they are stored in, the relationships between the values and the collection as well as the operations appplied on the data stored in the structure
+
+### **Arrays**
+
+- are eseedjdjdjd
+- In languages like java and swift they are homogenous containers(they can only contain one data type ) and in py and JS they are heterogenous structures.
+- It is a contiguos data structure(stored in blocks beside each other with no gap so that retrieving the values)
+
+## Operations
