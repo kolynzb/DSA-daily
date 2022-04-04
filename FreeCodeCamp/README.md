@@ -57,12 +57,39 @@ Efficiency is dettermined by space and time.
 
 # **Introduction To Data Structures**.
 
-    A data storage format. It is the collection of values and the format they are stored in, the relationships between the values and the collection as well as the operations appplied on the data stored in the structure
+    A data storage format. It is the collection of values and the format they are stored in, the relationships between the values and the collection as well as the operations appplied on the data stored in the structure.
+
+## Operations on Data Structures
+
+- We need to be able to ;
+
+1. Access and read values.
+2. Search for arbitrary values.
+3. Insert values at any point in the structure.
+4. Delete values from the structure.
 
 ### **Arrays**
 
 - are eseedjdjdjd
-- In languages like java and swift they are homogenous containers(they can only contain one data type ) and in py and JS they are heterogenous structures.
-- It is a contiguos data structure(stored in blocks beside each other with no gap so that retrieving the values)
+- In languages like java and swift they are homogenous containers(_contain one data type e.g._ `int[] age = {1,2,3,4,5}` ) and in python and javascript they are heterogenous structures( _contain one data type e.g._ `let age = [1,2,3,4,5]`).
+- It is a contiguos data structure(stored in blocks beside each other with no gap so that retrieving the values is faster).
 
-## Operations
+### Accessing a Value in an Array
+
+- When an array is declared a base ammout of contiguos memory is allocated as the array storage.Computers refer to memory using an address but instead of keep a reference to all the memory allocated for an array, it only has to store the address of the first location .Because the memory is contiguous,using the base addresss the array can calculate the address of any of value by using the index position of the value as an offset.
+
+```
+ N = size of the array
+ Space = N\*M (_M is memory allocated to each element_)
+// so since it knows the size allocated to each element it can calculate the location for the next address.
+M1 = 1*M
+```
+
+| Array  | 5   | 6   | 9   | 2   |
+| ------ | --- | --- | --- | --- |
+| Index  | 0   | 1   | 2   | 3   |
+| memory | M0  | M1  | M2  | M3  |
+
+[py example](./4_arrays.py)
+
+### Linked List 2:23:45
