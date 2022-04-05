@@ -70,9 +70,10 @@ Efficiency is dettermined by space and time.
 
 ### **Arrays**
 
-- are eseedjdjdjd
+- is a data structure for storing more than one data item that has a similar data type
 - In languages like java and swift they are homogenous containers(_contain one data type e.g._ `int[] age = {1,2,3,4,5}` ) and in python and javascript they are heterogenous structures( _contain one data type e.g._ `let age = [1,2,3,4,5]`).
 - It is a contiguos data structure(stored in blocks beside each other with no gap so that retrieving the values is faster).
+  ![array structure](https://www.guru99.com/images/1/102319_0559_ArrayinData1.png)
 
 ### Accessing a Value in an Array
 
@@ -92,4 +93,18 @@ M1 = 1*M
 
 [py example](./4_arrays.py)
 
-### Linked List 2:23:45
+## Lets build our data structure
+
+- why? we build our own data structures to solve particular problems.
+  now since arrays are bad at inserting and deleting.
+
+### Linked List
+
+- This is good when your operation has far more deletes and insertions than other operations.
+- Is a linear data structure where each element is list is contained in a separate object (_node_). A node models two peices of information an individual item of the data we want to store and the reference to the next node in the list
+- The first node is called the head and the last is called the tail.These nodes are special. the list only maintains the reference to the head although in some implementations it keep a referance to the tail aswell.The tail denoted the end and points to nothing.(nodes are self referantial objects --> meaning it includes a refereance to the node itself)
+  ![linked list](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
+- They come in two forms _singly linked lists_(each node stores a reference to the next node in the list) and _double linked lists_(each node stores a reference to the node before or after ).
+
+![Double linked list](https://sebhastian.com/doubly-linked-list-javascript/doubly-linked-list-example.png)
+[*check out the files*](./5_linked_list.py)
