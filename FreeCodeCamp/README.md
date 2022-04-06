@@ -105,6 +105,14 @@ M1 = 1*M
 - The first node is called the head and the last is called the tail.These nodes are special. the list only maintains the reference to the head although in some implementations it keep a referance to the tail aswell.The tail denoted the end and points to nothing.(nodes are self referantial objects --> meaning it includes a refereance to the node itself)
   ![linked list](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
 - They come in two forms _singly linked lists_(each node stores a reference to the next node in the list) and _double linked lists_(each node stores a reference to the node before or after ).
+  [_check out the files_](./5_linked_list.py)
 
 ![Double linked list](https://sebhastian.com/doubly-linked-list-javascript/doubly-linked-list-example.png)
-[*check out the files*](./5_linked_list.py)
+
+- Where to use them -->
+
+## Merge-Sort Algorithm
+
+- When you have an unsorted array, It is split into half and the two arrays .On the second pass they are split and we do that till each element has a single sub array.Then it merges two arrays close to each other in ascending order ,then cobines the next pairs next to each other and does this till its done.(_This strategy is called divide and conquer_)
+  _[check files here (merge-sort on an array)](./6_merge-sort.py)_
+- Merge sort on a [linked list](./7_linked_list_merge-sort.py).

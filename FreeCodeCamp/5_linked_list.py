@@ -79,7 +79,7 @@ class LinkedList:
         """
         Removes Node containing data that matches the key
         Returns the node or `None` if key doesn't exist
-        Takes O(n) time
+        Takes O(n) time --linear time
         """
         current = self.head
         previous = None
@@ -123,3 +123,4 @@ class LinkedList:
 
 l = LinkedList()
 l.add(1)
+# remove at index and node at index
