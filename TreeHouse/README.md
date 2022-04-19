@@ -116,3 +116,8 @@ M1 = 1*M
 - When you have an unsorted array, It is split into half and the two arrays .On the second pass they are split and we do that till each element has a single sub array.Then it merges two arrays close to each other in ascending order ,then cobines the next pairs next to each other and does this till its done.(_This strategy is called divide and conquer_)
   _[check files here (merge-sort on an array)](./6_merge-sort.py)_
 - Merge sort on a [linked list](./7_linked_list_merge-sort.py).
+
+## Sorting And Searching algorithms.
+
+- To find the importance using a good search algorithm we start with a bad one.
+- [Bogo Sort](./9_bogo_sort.py). Randomises the list of values until its sorted.
