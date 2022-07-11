@@ -1,0 +1,5 @@
+
+- install apache bench mark
+- head of ml at ibm 
+- Master - slave db name
+- Redis(ttl),memecache
