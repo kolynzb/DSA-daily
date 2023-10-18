@@ -1,7 +1,7 @@
 const validAnagram = (str1: string, str2: string) => {
   if (str1.length === 0 && str2.length === 0) return true;
 
-  let lookup: any = {};
+  let lookup: { [key: string]: number } = {};
 
   for (let i = 0; i < str1.length; i++) {
     const letter = str1[i];
