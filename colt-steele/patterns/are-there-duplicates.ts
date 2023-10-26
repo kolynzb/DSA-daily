@@ -22,7 +22,7 @@ Time - O(n log n)
 Space - O(1
 */
 
-function areThereDuplicatesFC(...args: string[] | number[]) {
+function areThereDuplicatesFC(...args: string[] | number[]): boolean {
   const lookup: { [key: string]: number } = {};
   for (let i = 0; i < args.length; i++) {
     let index = args[i];
@@ -33,8 +33,32 @@ function areThereDuplicatesFC(...args: string[] | number[]) {
       return true;
     }
   }
+  return false;
 }
 
 console.log(areThereDuplicatesFC(1, 2, 3)); // false
 console.log(areThereDuplicatesFC(1, 2, 2)); // true
 console.log(areThereDuplicatesFC("a", "b", "c", "a")); // true
+
+// Using Multiple Pointers
+function areThereDuplicatesMP<T>(...args: T[]): boolean {
+  let left = 0;
+  let right = 1;
+
+  args.sort((a, b) => (a > b ? 1 : -1));
+  while (left < args.length) {
+    if (args[left] === args[right]) return true;
+    right++;
+    left++;
+  }
+  return false;
+}
+
+console.log(areThereDuplicatesMP(1, 2, 3)); // false
+console.log(areThereDuplicatesMP(1, 2, 2)); // true
+console.log(areThereDuplicatesMP("a", "b", "c", "a")); // true
+
+
+function areThereDuplicates() {
+  return new Set(arguments).size !== arguments.length;
+}
